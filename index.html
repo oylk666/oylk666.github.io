@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yilin Ouyang - Computer Science student at XJTLU. Interested in networking, distributed systems and machine learning." />
+  <title>Yilin Ouyang | Computer Science Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background (a small moving network, fitting the module theme) -->
+  <canvas id="net-canvas" aria-hidden="true"></canvas>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top">Yilin<span>.O</span></a>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path class="icon-moon" fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-hi">Hi there, I'm</p>
+      <h1 class="hero-name">Yilin Ouyang</h1>
+      <h2 class="hero-role">I'm into <span id="typed" class="typed"></span><span class="caret">|</span></h2>
+      <p class="hero-tag">Computer Science student at Xi'an Jiaotong-Liverpool University,<br />focused on networking, distributed computing and data systems.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <ul class="socials">
+        <li><a href="https://github.com/oylk666" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.4 23c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.9 2.9 19 3.2 19 3.2c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a></li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hello! I'm Yilin, an undergraduate studying <strong>Computer Science</strong> at
+          Xi'an Jiaotong-Liverpool University (Entrepreneur College, Taicang). I enjoy
+          understanding how machines talk to each other and how work can be spread
+          across many computers.</p>
+          <p>This page itself is part of my networking coursework: after deploying it on
+          GitHub Pages I inspect its traffic with <code>ping</code>, <code>nslookup</code>,
+          <code>traceroute</code> and Wireshark.</p>
+        </div>
+        <ul class="about-facts">
+          <li><strong>Degree:</strong> BSc Computer Science</li>
+          <li><strong>University:</strong> XJTLU</li>
+          <li><strong>Location:</strong> Suzhou / Taicang, China</li>
+          <li><strong>Interests:</strong> Networks, distributed systems, ML</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Languages</h3><p>Python · Java · SQL · JavaScript</p></div>
+        <div class="skill-card"><h3>Networking</h3><p>TCP/UDP · Sockets · DNS · HTTP/HTTPS · Wireshark</p></div>
+        <div class="skill-card"><h3>Distributed Systems</h3><p>MapReduce · Hadoop · Apache Spark · Spark MLlib</p></div>
+        <div class="skill-card"><h3>Tools</h3><p>Git · GitHub · Linux/macOS · VS Code</p></div>
+        <div class="skill-card"><h3>Web</h3><p>HTML5 · CSS3 · Responsive design</p></div>
+        <div class="skill-card"><h3>Data &amp; ML</h3><p>Data processing · Feature engineering · Classification</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Socket Video Streaming</h3>
+          <p>A TCP and UDP video streaming client/server in Python, captured and
+          compared with Wireshark to study reliability and overhead.</p>
+          <span class="tag">Python</span><span class="tag">Sockets</span><span class="tag">Wireshark</span>
+        </article>
+        <article class="project-card">
+          <h3>MapReduce Word Count</h3>
+          <p>A from-scratch MapReduce engine using only the Python standard library,
+          with explicit Map, shuffle and Reduce stages.</p>
+          <span class="tag">Python</span><span class="tag">MapReduce</span>
+        </article>
+        <article class="project-card">
+          <h3>Hadoop vs Spark</h3>
+          <p>The same word-count job implemented in Hadoop MapReduce and Apache Spark,
+          benchmarked and compared on one dataset.</p>
+          <span class="tag">Hadoop</span><span class="tag">Spark</span>
+        </article>
+        <article class="project-card">
+          <h3>Machine Learning with Spark</h3>
+          <p>A complete MLlib pipeline - loading, preprocessing, training, prediction
+          and evaluation of a classification model.</p>
+          <span class="tag">Spark MLlib</span><span class="tag">Machine Learning</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="contact-lead">Feel free to reach out - I'm happy to talk about networks,
+      distributed systems or internship opportunities.</p>
+      <div class="contact-links">
+        <a href="https://github.com/oylk666" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Yilin Ouyang · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
