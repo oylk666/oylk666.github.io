@@ -26,7 +26,7 @@ navLinks.querySelectorAll("a").forEach((a) =>
 );
 
 /* ---- Typing effect in the hero ---- */
-const words = ["networking", "distributed systems", "Apache Spark", "machine learning", "web development"];
+const words = ["AI applications", "data analysis", "retrieval-augmented generation", "machine learning"];
 const typedEl = document.getElementById("typed");
 let wordIndex = 0, charIndex = 0, deleting = false;
 
